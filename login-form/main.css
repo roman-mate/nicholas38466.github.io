@@ -1,0 +1,124 @@
+body{
+	background-color: #e8e8e8;
+	text-align: center;
+	font-family: sans-serif;
+}
+.window{
+	margin: 40px auto;
+	height:500px;
+	width: 840px;
+	background-color: #ffffff;
+	border-top: 4px solid red;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+header{
+	height: 70px;
+	font-size: 31px;
+	font-weight: bold;
+	
+}
+.log_site{
+	display: inline-block;
+	margin-top: 20px;
+}
+.content{
+	background-color: #f3f3f3;
+	height: 330px;
+}
+.close{
+	padding-top: 15px;
+	padding-right: 15px;
+	float: right;
+	cursor: pointer;
+}
+.FB{	
+	background-color: #3e5b96;
+	height: 40px;
+	width:300px;
+	cursor: pointer;
+	position: relative;
+	top: 60px;
+	left: 40px;
+	border-radius: 4px;
+}
+.FB:hover{
+  background-color: #385388;
+}
+.GOOGLE{
+	background-color: #dd5342;
+	height: 40px;
+	width:300px;
+	cursor: pointer;
+	position: relative;
+	top: 60px;
+	left: 40px;
+	border-radius: 4px;
+}
+.GOOGLE:hover{
+  background-color:#cd4c3c;
+}
+.log_with{
+	padding-top: 9px;
+	color: white;
+}
+.logo{float: left;
+	margin-top: 9px;
+	margin-left: 15px;
+}
+.line{
+	position: absolute;
+	height: 250px;
+	width: 1px;
+	background-color: #cfcfcf;
+	margin-left: 420px;
+	margin-top: -55px;
+}
+.right_area{
+	font-weight: bold;
+	width: 350px;
+	height: 330px;
+	float: right;
+	margin-top: -95px;
+	text-align: left;
+	padding-left: 60px;
+}
+.loginTEXT{
+	padding-top: 20px;
+}
+.input{
+	width: 300px;
+	height: 39px;
+	font-size: 30px;
+}
+.checkbox-airy{
+	margin-top: 23px;
+	cursor: pointer;
+}
+.log_in{
+	margin-top: 20px;
+	cursor: pointer;
+	width: 100px;
+	height: 40px;
+	background-color: #252525;
+	border-radius: 4px;
+	color: white;
+}
+.log_in:hover{
+background-color: #666666;
+}
+.help{
+	margin-left: 40px;
+}
+.help:hover{
+color: #666666;
+}
+footer{
+	height: 85px;
+}
+.footertext{
+	margin-top: 30px;
+}
+a{
+color: black;
+font-weight: bold;
+}
