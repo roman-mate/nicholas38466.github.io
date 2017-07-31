@@ -1,0 +1,222 @@
+@import "./icons/iconfont__varible.scss";
+@import "./icons/iconfont__icon.scss";
+@import "normalize";
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700');
+
+$oswald: 'Oswald', sans-serif;
+$serif: 'PT Serif', serif;
+
+a{
+	text-decoration: none;
+}
+*{box-sizing: border-box;
+}
+.header--top-content{
+	padding-left: 156px;
+	padding-right: 156px;
+	height: 108px;
+}
+.header--logo-title{
+	float: left;
+	margin-top: 20px;
+}
+.header__logo{
+	font-family: $oswald;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #eb3c00;
+	font-size: 48px;
+	display: inline-block;
+}
+
+.header__title{
+	font-family: $serif;
+	font-style: italic;
+	color: #939393;
+	display: inline-block;
+	
+}
+
+.header--links{
+	float: right;
+	margin-top: 30px;
+}
+.header--link__login{
+	font-family: $serif;
+	font-style: italic;
+	color: #000;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-right: 30px;
+	&:hover{
+		color: #eb3c00;
+		.icon.icon--key{
+			font-size: 16px;
+		}
+	}
+}
+
+
+.icon.icon--key{
+	color: #eb3c00;
+	font-size: 14px;
+	margin-right: 10px;
+}
+.header--link__contact-me{
+	display: inline-block;
+	text-align: center;
+	background-color: #eb3c00;
+	color: #fff;
+	min-width: 190px;
+	min-height: 45px;
+	text-transform: uppercase;
+	padding-top: 15px;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+
+.header--menu{
+	background-color: #282828;
+	height: 70px;
+	width: 100%;
+	padding-left: 156px;
+	padding-right: 156px;
+	&__nav{
+		height: 100%;
+		display: inline-block;
+		&__link{
+			display: inline-block;
+			font-family: $oswald;
+			font-weight: 400;
+			text-transform: uppercase;
+			color: #fff;
+			font-size: 18px;
+			letter-spacing: 2px;
+			text-align: center;
+			padding: 25px 15px 0 15px;
+			height: 100%;
+			&:hover{
+				background-color: #eb3c00;
+			}
+		}
+	}
+}
+
+.input--field-search{
+	display: inline-block;
+	position: relative;
+	height: 40px;
+	width: 270px;
+	float: right;
+	margin-top: 15px;
+}
+.header__input-search{
+	height: 100%;
+	width: 100%;
+	border: 0;
+	padding-left: 10px;
+	font-family: $oswald;
+	font-weight: 400;
+}
+.icon.icon--search{
+	position: absolute;
+	right: 12px;
+	top: 10px;
+	font-size: 20px;
+	color: #939393;
+}
+
+.home-page{
+	padding-left: 156px;
+	padding-right: 156px;
+	background-color: #f5f5f5;
+}
+.home--title{
+	display: block;
+	font-size: 48px;
+	font-family: $oswald;
+	font-weight: 500;
+	padding-top: 58px;
+	width: 740px;
+	margin: 0;
+}
+
+.home--text{
+	font-family: $serif;
+	width: 830px;
+	font-size: 24px;
+	line-height: 36px;
+	margin-top: 50px;
+}
+
+
+
+.home--list__wrapper{
+	margin-top: 45px;
+	.home--list__title{
+		font-size: 18px;
+		font-family: $serif;
+		font-weight: bold;
+	}
+}
+.home--list{
+	padding-left: 15px;
+	font-family: $serif;
+	font-size: 18px;
+}
+
+.home--news{
+	margin-top: 65px;
+	&__title{
+		color: #eb3c00;
+		text-transform: uppercase;
+		font-family: $oswald;
+		font-weight: 400;
+	}
+
+	&__links{
+		margin-top: 20px;
+		display: flex;
+		align-items: stretch;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__link{
+		display: inline-block;
+		width: 170px;
+		color: #000;
+		font-family: $oswald;
+		font-weight: 300;
+		font-size: 18px;
+		
+		&:hover{
+			background-color: #dbd1d1;
+			border-radius: 5px;
+		}
+	}
+	&__img{
+		width: 100%;
+	}
+}
+.home--footer{
+	height: 210px;
+	width: 100%;
+	background-color: #f5f5f5;
+	position: relative;
+	&__btn{
+		color: #000;
+		position: absolute;
+		bottom: 55px;
+		right: 25px;
+		font-family: $oswald;
+		font-weight: 300;
+		&:hover{
+			font-weight: 900;
+		}
+	}
+}
