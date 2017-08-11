@@ -88,6 +88,10 @@ p {
   font-weight: 500;
   margin-bottom: 25px; }
 
+.title--form {
+  color: #000;
+  font-size: 24px; }
+
 .wrap--main {
   display: -ms-flexbox;
   display: flex;
@@ -99,12 +103,12 @@ p {
   position: relative; }
 
 .main-content {
-  background-color: #f7f8f8; }
+  background-color: #f7f8f8;
+  padding-top: 45px; }
 
 .payment--info {
   color: #8494ab;
   font-size: 16px;
-  margin-top: 45px;
   margin-left: 30px;
   margin-right: 30px; }
 
@@ -119,7 +123,7 @@ p {
 
 .form {
   position: relative;
-  min-height: 420px;
+  min-height: 440px;
   padding: 30px 30px 50px 30px;
   color: #8494ab; }
   .form__card {
@@ -331,6 +335,8 @@ p {
     .sidebar.visible {
       right: 0;
       width: 100%; }
+  .label-down {
+    display: none; }
   .btn--close-menu, .btn--mobile {
     display: block; }
   .page {
@@ -359,6 +365,7 @@ p {
 @media (max-width: 400px) {
   .input--form.input--card {
     width: 55px;
-    margin-right: 2px; } }
+    margin-right: 2px;
+    padding: 5px; } }
 
 /*# sourceMappingURL=main.css.map */

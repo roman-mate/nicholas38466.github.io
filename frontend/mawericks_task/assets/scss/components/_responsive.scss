@@ -10,6 +10,9 @@
 
 		}
 	}
+	.label-down{
+		display: none;
+	}
 	.btn--close-menu, .btn--mobile{
 		display: block;
 	}
@@ -43,5 +46,6 @@
 	.input--form.input--card{
 		width: 55px;
 		margin-right: 2px;
+		padding: 5px;
 	}
 }
