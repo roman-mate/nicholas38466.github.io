@@ -1,0 +1,47 @@
+@media (max-width: 860px){
+	.sidebar{
+		position: absolute;
+		z-index: 10;
+		right: -100%;
+		transition: .5s;
+		&.visible{
+			right: 0;
+			width: 100%;
+
+		}
+	}
+	.btn--close-menu, .btn--mobile{
+		display: block;
+	}
+	.page{
+		width: 100%;
+	}
+}
+
+@media (max-width: 580px){
+	.form{
+		padding: 15px 15px 20px 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-height: 640px;
+	}
+	.form__card{
+		position: relative;
+		bottom: 0;
+		max-width: 100%;
+		&--main{
+			left: 0;
+			margin-bottom: 15px;
+		}
+		&--cvv{
+			right: 0;
+		}
+	}
+}
+@media (max-width: 400px){
+	.input--form.input--card{
+		width: 55px;
+		margin-right: 2px;
+	}
+}

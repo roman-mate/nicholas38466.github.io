@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
+	<script src="./js/jquery-3.2.0.min.js"></script>
+</head>
+<body>
+	<div class="wrap--main">
+		<aside class="sidebar">
+			<div class="logo--main">
+				<img src="./images/logo.png" alt="">
+				<div class="btn--close-menu"></div>
+			</div>
+		
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__list__item">
+						<a href="#" class="nav-link"><span>Первая ссылка</span></a>
+					</li>
+					<li class="nav__list__item">
+						<a href="#" class="nav-link"><span>Вторая ссылка</span></a>
+					</li>
+					<li class="nav__list__item">
+						<a href="#" class="nav-link"><span>Третья ссылка</span></a>
+					</li>
+					<li class="nav__list__item">
+						<a href="#" class="nav-link"><span>Личний кабинет</span></a>
+					</li>
+					<li class="nav__list__item">
+						<a href="#" class="nav-link"><span>Вийти</span></a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<div class="page">
+			<header class="header"  id="gradient">
+
+				<div class="btn--mobile"></div>
+				<h1 class="title--page">Заголовок страницы</h1>
+				<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Жизни путь вершину его то переписали, страна. То города, эта вскоре решила своего запятых сбить по всей всеми единственное снова это?</p>
+			</header>
+		
+		
+			<main class="main-content">
+				
+				<div class="payment--info">
+					<h4 class="title--info">Информация по оплате:</h4>
+		
+					<div class="contact-info">
+						<span>Номер счета:</span>
+						<span class="number">11223344556677</span>
+					</div>
+					<div class="contact-info">
+						<span>Сумма платежа:</span>
+						<span class="sum">1 500 грн</span>
+					</div>
+		
+				</div>
+			
+				<form action="" class="form form--pay">
+			
+					<section class="form__card form__card--main">
+						<div class="form__title-box">
+							<span >Номер карты</span>
+						</div>
+						<div>
+							<input type="tel" maxlength="4" minlength="4" required class="input--form input--card">
+							<input type="tel" maxlength="4" minlength="4" required class="input--form input--card">
+							<input type="tel" maxlength="4" minlength="4" required class="input--form input--card">
+							<input type="tel" maxlength="4" minlength="4" required class="input--form input--card">
+						</div>
+			
+						<div class="form__title-box">
+							<span >Срок действия</span>
+						</div>
+						<div class="dd-wrap">
+						
+							<select class="dropdown input--form" id="month" name="month">
+								<option value="">04</option>
+								<option class="dropdown__item" value="1">01</option>
+								<option class="dropdown__item" value="2">02</option>
+								<option class="dropdown__item" value="3">03</option>
+								<option class="dropdown__item" value="4">04</option>
+								<option class="dropdown__item" value="5">05</option>
+								<option class="dropdown__item" value="6">06</option>
+								<option class="dropdown__item" value="7">07</option>
+								<option class="dropdown__item" value="8">08</option>
+								<option class="dropdown__item" value="9">09</option>
+								<option class="dropdown__item" value="10">10</option>
+								<option class="dropdown__item" value="11">11</option>
+								<option class="dropdown__item" value="12">12</option>
+							</select>
+							<span for="month" class="label-down"></span>
+						</div>
+		                	<div class="dd-wrap">
+		                		<select class="dropdown input--form" id="year" name="year">
+		                			<option value="">2018</option>
+		                			<option value="1">2017</option>
+		                			<option value="2">2018</option>
+		                			<option value="3">2019</option>
+		                			<option value="4">2020</option>
+		                			<option value="5">2021</option>
+		                			<option value="6">2022</option>
+		                			<option value="7">2023</option>
+		                			<option value="8">2024</option>
+		                			<option value="9">2025</option>
+		                			<option value="10">2026</option>
+		                			<option value="11">2027</option>
+		                			<option value="12">2028</option>
+		                		</select>
+		                		<span for="month" class="label-down"></span>
+		                	</div>
+			
+			
+			
+						<input type="text" placeholder="Держатель карты" required minlength="4" class="input--form person">
+					</section>
+			
+					<section class="form__card form__card--cvv">
+						<div class="form__card__line"></div>
+						<div class="form__title-box">
+							<span>CVV2/CVC2</span>
+							<div class="cvv--info"><span>?</span></div>
+						</div>
+		
+						<input type="password" required maxlength="3" minlength="3" class="input--form cvv-code">
+						
+					</section>
+			
+					<input type="submit" class="btn btn--form" id="btn--form" value="Оплатить">
+				</form>
+							
+			</main>
+			
+			<footer class="footer">
+				<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Последний даль парадигматическая пустился, до семантика реторический по всей, возвращайся бросил моей свой текстами семь курсивных подпоясал мир безорфографичный напоивший, коварных которое инициал дал рекламных переписывается!</p>
+				<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+				<p>Далеко-далеко за словесными горами в стране.</p>
+				<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Журчит ее запятых над предупреждал. Вершину, букв там всеми, ее напоивший запятой его все, страну родного рот речью толку оксмокс даль которой семантика пунктуация обеспечивает выйти сбить от всех она! Ведущими.</p>
+			</footer>
+	</div>
+	</div>
+
+	
+
+	<script src="./js/main.js"></script>
+	<script src="./js/gradient.js"></script>
+</body>
+</html>
