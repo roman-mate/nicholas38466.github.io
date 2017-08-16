@@ -1,0 +1,31 @@
+@media (max-width: 1240px){
+	.sidebar{
+		position: absolute;
+		left: -320px;
+		z-index: 10;
+		
+	}
+	.icon.icon--menu-icon.btn--mobile{
+		display: block;
+	}
+	.icon.icon--menu-icon{
+		display: none;
+	}
+	.header{
+		padding-left: 80px;
+	}
+	.period{
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 640px){
+	.tree-in{
+		display: none;
+	}
+}
+@media (max-width: 460px){
+	.period{
+		display: none;
+	}
+}
