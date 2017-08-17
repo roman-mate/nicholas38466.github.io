@@ -1,0 +1,151 @@
+/*---- 1)a ----*/
+* {
+  box-sizing: border-box; }
+
+/*---- main vars ----*/
+/*----end main vars ----*/
+/*---- indent classes  ----*/
+.gatter-1 {
+  margin-left: calc(100% / 12); }
+
+.gatter-2 {
+  margin-left: calc(100% / 6); }
+
+.gatter-3 {
+  margin-left: calc(100% / 4); }
+
+.gatter-4 {
+  margin-left: calc(100% / 3); }
+
+.gatter-5 {
+  margin-left: calc(100% / 12 *5); }
+
+.gatter-6 {
+  margin-left: calc(100% / 2); }
+
+.gatter-12 {
+  margin-left: 100%; }
+
+/*----end indent classes  ----*/
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.row {
+  width: 100%; }
+  .row > * {
+    margin-top: 15px;
+    min-height: 40px;
+    float: left;
+    text-align: center;
+    background-color: #569;
+    transition: .3s; }
+    .row > *:hover {
+      background-color: green; }
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%; }
+  .col-xs-1 {
+    width: calc(100% / 12); }
+  .col-xs-2 {
+    width: calc(100% / 6); }
+  .col-xs-3 {
+    width: calc(100% / 4); }
+  .col-xs-4 {
+    width: calc(100% / 3); }
+  .col-xs-5 {
+    width: calc(100% / 12 *5); }
+  .col-xs-6 {
+    width: calc(100% / 2); }
+  .col-xs-12 {
+    width: 100%; } }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px; }
+  .col-sm-1 {
+    width: calc(100% / 12); }
+  .col-sm-2 {
+    width: calc(100% / 6); }
+  .col-sm-3 {
+    width: calc(100% / 4); }
+  .col-sm-4 {
+    width: calc(100% / 3); }
+  .col-sm-5 {
+    width: calc(100% / 12 *5); }
+  .col-sm-6 {
+    width: calc(100% / 2); }
+  .col-sm-12 {
+    width: 100%; } }
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px; }
+  .col-md-1 {
+    width: calc(100% / 12); }
+  .col-md-2 {
+    width: calc(100% / 6); }
+  .col-md-3 {
+    width: calc(100% / 4); }
+  .col-md-4 {
+    width: calc(100% / 3); }
+  .col-md-5 {
+    width: calc(100% / 12 *5); }
+  .col-md-6 {
+    width: calc(100% / 2); }
+  .col-md-12 {
+    width: 100%; } }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px; }
+  .col-lg-1 {
+    width: calc(100% / 12); }
+  .col-lg-2 {
+    width: calc(100% / 6); }
+  .col-lg-3 {
+    width: calc(100% / 4); }
+  .col-lg-4 {
+    width: calc(100% / 3); }
+  .col-lg-5 {
+    width: calc(100% / 12 *5); }
+  .col-lg-6 {
+    width: calc(100% / 2); }
+  .col-lg-12 {
+    width: 100%; } }
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1410px; } }
+
+@media (min-width: 1680px) {
+  .container {
+    max-width: 1560px; } }
+
+/*---- 1)b ----*/
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.main-bg {
+  background: url("http://bm.img.com.ua/nxs/img/prikol/images/large/1/2/308321_879397.jpg") no-repeat;
+  position: absolute;
+  background-size: cover;
+  width: 100%;
+  height: 300%;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+
+.content {
+  z-index: 5;
+  max-width: 500px;
+  margin: auto;
+  line-height: 20px;
+  font-size: 16px; }
+
+/*# sourceMappingURL=main.css.map */
