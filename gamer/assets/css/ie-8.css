@@ -20,8 +20,11 @@
   margin-right: 5px; }
 
 .share__popup {
+  display: none;
   left: -100px;
   border: 2px solid #999999; }
+  .share__popup.open {
+    display: block; }
   .share__popup .icon {
     border: none;
     background-image: url(./../img/for-IE-8/share-link-bg.jpg);

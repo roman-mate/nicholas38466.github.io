@@ -9,8 +9,9 @@
 	<title>Gamer</title>
 </head>
 <body>
-	<!--[if IE]><link href="./assets/css/ie-8.css" 
-    rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE]>
+		<link href="./assets/css/ie-8.css" rel="stylesheet" type="text/css" />
+	<![endif]-->
 	
 	<div class="container">
 	
@@ -31,13 +32,22 @@
 					<span class="price--new">$19.99</span>
 				</div>
 				
-				<div class="rating">
-					<span class="icon icon--rate-star active"></span>
-					<span class="icon icon--rate-star active"></span>
-					<span class="icon icon--rate-star active"></span>
-					<span class="icon icon--rate-star active"></span>
-					<span class="icon icon--rate-star"></span>
-				</div>
+				<form action="" class="rating">
+					<input id="radio1" type="radio" name="estrellas" value="5">
+					<label for="radio1" class="icon icon--rate-star"></label>
+
+					<input id="radio2" type="radio" name="estrellas" value="4" checked="checked">
+					<label for="radio2" class="icon icon--rate-star"></label>
+
+					<input id="radio3" type="radio" name="estrellas" value="3">
+					<label for="radio3" class="icon icon--rate-star"></label>
+
+					<input id="radio4" type="radio" name="estrellas" value="2">
+					<label for="radio4" class="icon icon--rate-star"></label>
+
+					<input id="radio5" type="radio" name="estrellas" value="1">
+					<label for="radio5" class="icon icon--rate-star"></label>
+				</form>
 
 				<div class="share">
 					<span class="btn btn--open-share">Share it!</span>

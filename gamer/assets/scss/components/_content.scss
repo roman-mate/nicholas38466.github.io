@@ -180,11 +180,25 @@ body{
 	}
 }
 .rating{
-	cursor: pointer;
+	cursor: arrow;
 	display: inline-block;
 	margin-top: 16px;
-	color: $second-color;
-	& .icon.active{
+	direction: rtl;
+	unicode-bidi: bidi-override;
+	& input[type="radio"]{
+		display: none;
+		&:checked ~ label{
+			color: $focus-color;
+			transform: rotateY(180deg);
+		}	
+	}
+	& label.icon{
+		display: inline-block;
+		cursor: pointer;
+		color: $second-color;
+		transition: .5s;
+	}
+	& label:hover, label:hover ~ label{
 		color: $focus-color;
 	}
 }
@@ -196,17 +210,19 @@ body{
 	margin-left: 13px;
 	font-weight: 700;
 	&__popup{
-		display: none;
+		display: block;
 		position: absolute;
 		z-index: 5;
 		left: 50%;
 		top: 140%;
-		transform: translate(-50%);
+		transform: translate(-50%) rotateX(90deg);
+		opacity: 0;
 		min-height: 107px;
 		min-width: 287px;
 		background-color: white;
 		box-shadow: 0px 0px 5px $second-color;
 		padding: 15px;
+		transition: .3s;
 		&:before{
 			@include pseudo;
 			height: 8px;
@@ -221,7 +237,8 @@ body{
 			float: right;
 		}
 		&.open{
-			display: block;
+			transform: translate(-50%) rotateX(0deg);
+			opacity: 1;
 		}
 	}
 	&-links{
