@@ -1,0 +1,279 @@
+a{
+	text-decoration: none;
+	color: inherit;
+}
+*{
+	box-sizing: border-box;
+}
+body{
+	overflowX: hidden;
+}
+.container{
+	max-width: 835px;
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.btn{
+	cursor: pointer;
+	border: none;
+	background: none;
+	outline: none;
+	&--form{
+		display: block;
+		min-height: 44px;
+		padding: 0 60px;
+		border-radius: 999rem;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: 700;
+		background-color: $btn-price-color;
+	}
+	&--close{
+		position: relative;
+		width: 15px;
+		height: 15px;
+		transition: .3s;
+		&:hover{
+			transform: rotate(90deg);
+		}
+		&:after, &:before{
+			@include pseudo;
+			height: 3px;
+			width: 17px;
+			background-color: $share-color;
+			left: 0;
+			top: 6px;
+		}
+		&:before{
+			transform: rotate(-45deg);
+		}
+		&:after{
+			transform: rotate(45deg);
+		}
+	}
+	&--slide{
+		display: none;
+
+	}
+}
+
+.similar-products{
+	& .title{
+		font-size: 22px;
+		margin-top: -3px;
+		letter-spacing: 1.5px;
+		word-spacing: 1px;
+	}
+}
+
+.price{
+	font-weight: 700;
+	letter-spacing: 1px;
+	&--old{
+		text-decoration: line-through;
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+	&--new{
+		color: $focus-color;
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+}
+.title{
+	font-family: $title-font;
+	text-transform: uppercase;
+	font-weight: 700;
+	&--details{
+		position: relative;
+		display: block;
+	}
+}
+// OPENED PROD
+.product{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 55px;
+	&__photo{
+		width: 400px;
+		height: 420px;
+		& img{
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	& .title{
+		font-size: 24px;
+		letter-spacing: .5px;
+		margin-top: -10px;
+	}
+	&__index{
+		margin-top: 10px;
+		color: $second-color;
+	}
+	&__info{
+		
+		& .price{
+			background-color: transparent;
+			position: relative;
+			font-size: 24px;
+			margin-top: 15px;
+			padding-left: 0;
+			&--old{
+				padding-left: 0;
+			}
+		}
+	}
+	&__index{
+		font-size: 10px;
+		letter-spacing: 1px;
+	}
+	&__details{
+		width: 380px;
+		font-size: 12px;
+		margin-top: 22px;
+		line-height: 140%;
+		word-spacing: .5px;
+	}
+	&__sizes{
+		text-transform: uppercase;
+		font-weight: 800;
+		margin-top: 25px;
+	}
+}
+.sizes{
+	display: inline-block;
+	
+	&__input{
+		display: none;
+		& + label{
+			display: inline-block;
+			cursor: pointer;
+			text-align: center;
+			line-height: 36px;
+			height: 38px;
+			width: 38px;
+			margin-right: 9px;
+			border-radius: 999rem;
+			border: 1px solid $main-text-color;
+			font-size: 12px;
+			transition: .3s;
+		}
+		&:checked + label{
+			color: white;
+			background-color: $main-text-color;
+		}
+	}
+	&__title{
+		display: inline-block;
+		margin-top: 10px;
+		margin-right: 12px;
+	}
+	& .btn{
+		margin-top: 25px;
+		transition: .3s;
+		&:hover{
+			box-shadow: 2px 2px 5px $second-color;
+		}
+	}
+}
+.rating{
+	cursor: pointer;
+	display: inline-block;
+	margin-top: 16px;
+	color: $second-color;
+	& .icon.active{
+		color: $focus-color;
+	}
+}
+.share{
+	display: inline-block;
+	color: $share-color;
+	position: relative;
+	font-size: 18px;
+	margin-left: 13px;
+	font-weight: 700;
+	&__popup{
+		display: none;
+		position: absolute;
+		z-index: 5;
+		left: 50%;
+		top: 140%;
+		transform: translate(-50%);
+		min-height: 107px;
+		min-width: 287px;
+		background-color: white;
+		box-shadow: 0px 0px 5px $second-color;
+		padding: 15px;
+		&:before{
+			@include pseudo;
+			height: 8px;
+			width: 8px;
+			transform: rotate(45deg) translate(-50%);
+			box-shadow: -2px -2px 3px $second-color;
+			background-color: white;
+			left: 50%;
+			top: 0;
+		}
+		& .btn--close{
+			float: right;
+		}
+		&.open{
+			display: block;
+		}
+	}
+	&-links{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-top: 10px;
+		& .icon{
+			display: inline-block;
+			height: 40px;
+			width: 40px;
+			text-align: center;
+			line-height: 36px;
+			border: 2px solid $share-color;
+			border-radius: 999rem;
+			transition: .3s;
+			&:hover{
+				transform: rotate(360deg);
+			}
+		}
+	}
+}
+//END OPENED PROD
+.prod-list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 15px;
+	&__item{
+		display: inline-block;
+		position: relative;
+		margin-bottom: 20px;
+		width: 265px;
+		height: 265px;
+		transition: .3s;
+		& img{
+			width: 100%;
+			height: 100%;
+		}
+		&:hover{
+			transform: scale(1.05);
+		}
+		& .price{
+			position: absolute;
+			right: 0;
+			bottom: 22px;
+			background-color: $btn-price-color;
+			padding-left: 4px;
+			padding-right: 4px;
+		}
+	}
+}
+.tablet-visible{
+	display: none;
+}

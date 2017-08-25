@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Oswald:300,400,500,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/css/main.css">
+	<title>Gamer</title>
+</head>
+<body>
+	<!--[if IE]><link href="./assets/css/ie-8.css" 
+    rel="stylesheet" type="text/css" /><![endif]-->
+	
+	<div class="container">
+	
+	<!-- ONE PRODUCT -->
+		<div class="product">
+			<div class="product__photo">
+				<img src="./assets/img/prod-photo.jpg" alt="">
+			</div>
+
+			<div class="product__info">
+				<h1 class="title">for gamers by gamers tee</h1>
+				<div class="product__index">
+					<span>Item #:</span> 
+					<span class="index__number">701642853695</span>
+				</div>
+				<div class="price">
+					<span class="price--old">$29.50</span>
+					<span class="price--new">$19.99</span>
+				</div>
+				
+				<div class="rating">
+					<span class="icon icon--rate-star active"></span>
+					<span class="icon icon--rate-star active"></span>
+					<span class="icon icon--rate-star active"></span>
+					<span class="icon icon--rate-star active"></span>
+					<span class="icon icon--rate-star"></span>
+				</div>
+
+				<div class="share">
+					<span class="btn btn--open-share">Share it!</span>
+					<div class="share__popup">
+						<span class="tablet-none">Share with</span>
+						<button class="btn btn--close" id="btn_close_popup"></button>
+						<div class="share-links">
+							<a href="#" class="icon icon--facebook"></a>
+							<a href="#" class="icon icon--twitter"></a>
+							<a href="#" class="icon icon--pinterest"></a>
+							<a href="#" class="icon icon--youtube"></a>
+							<a href="#" class="icon icon--instagram"></a>
+						</div>
+					</div>
+				</div>
+
+				<h5 class="tablet-visible title--details">details:</h5>
+
+				<p class="product__details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+
+				<form class="product__sizes sizes">
+					<span class="sizes__title"><span class="tablet-visible">select a </span> size:</span>
+					
+					<input class="sizes__input" type="radio" name="radio" id="size-xs">
+					<label class="sizes__label" for="size-xs">xs</label>
+
+					<input class="sizes__input" type="radio" name="radio" id="size-s">
+					<label class="sizes__label" for="size-s">s</label>
+
+					<input class="sizes__input" type="radio" name="radio" id="size-m">
+					<label class="sizes__label" for="size-m">m</label>
+
+					<input class="sizes__input" type="radio" name="radio" id="size-l" checked="checked">
+					<label class="sizes__label" for="size-l">l</label>
+					
+
+					<button type="submit" class="btn btn--form">add to cart</button>
+
+				</form>
+
+			</div>
+		</div>
+	<!--END ONE PRODUCT -->
+
+	<!-- MAY LIKE PRODUCTS -->
+		<div class="similar-products">
+			<h2 class="title">you may also like</h2>
+			<div class="prod-list-wrap">
+				<div class="prod-list">
+					<a href="#" class="prod-list__item js-slide">
+						<img src="./assets/img/prod-1.jpg" alt="">
+						<span class="price">
+							<span class="price--old">$29.99</span>
+							<span class="price--new">$19.99</span>
+						</span>
+					</a>
+					<a href="#" class="prod-list__item">
+						<img src="./assets/img/prod-2.jpg" alt="">
+						<span class="price">$22.00</span>
+						
+					</a>
+					<a href="#" class="prod-list__item">
+						<img src="./assets/img/prod-3.jpg" alt="">
+						<span class="price">$24.99</span>
+					</a>
+					<a href="#" class="prod-list__item">
+						<img src="./assets/img/prod-4.jpg" alt="">
+						<span class="price">
+							<span class="price--old">$29.99</span>
+							<span class="price--new">$19.99</span>
+						</span>
+					</a>
+					<a href="#" class="prod-list__item">
+						<img src="./assets/img/prod-5.jpg" alt="">
+						<span class="price">$60.00</span>
+					</a>
+					<a href="#" class="prod-list__item">
+						<img src="./assets/img/prod-6.jpg" alt="">
+						<span class="price">$54.00</span>
+					</a>
+				</div>
+			</div>
+			<span class="btn btn--slide btn--prev js-prev"></span>
+			<span class="btn btn--slide btn--next js-next"></span>
+		</div>
+	<!--END MAY LIKE PRODUCTS -->
+	</div>
+
+	<script src="./assets/js/main.js"></script>
+</body>
+</html>
